@@ -1,0 +1,32 @@
+.greeting {
+  position: relative;
+  width:100%;
+  height:auto;
+  padding: 60px 0;
+  h1 {
+    width:100% !important;
+    height:48px !important;
+    font-family: Roboto !important;
+    font-weight:700 !important;
+    font-size: 37px !important;
+    color:#362e48 !important;
+    margin:0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  p {
+    width:100%;
+    font-family: Roboto;
+    font-weight:400 !important;
+    font-size: 15px;
+    margin:0 !important;
+    padding: 0 100px!important;
+    text-align: center;
+    color:#6d6485;
+    line-height: 18px;
+    a {
+      text-decoration: none;
+      color:#4166e2;
+    }
+  }
+}

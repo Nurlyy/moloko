@@ -1,0 +1,236 @@
+.conteaner-profile {
+  position: relative;
+  display: grid;
+  width:910px;
+  height:auto;
+  margin:0 auto;
+  box-sizing:border-box;
+  padding: 0;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 40px auto;
+  gap: 0px;
+  .conteaner-header-profile {
+    background: #fff;
+    button {
+      cursor: pointer;
+      border: 0;
+      background:#ebebeb;
+      outline: none;
+      height:32px;
+      box-sizing:border-box;
+      padding: 0 18px 0 30px;
+      font-family: Roboto;
+      font-weight:500;
+      font-size: 13px;
+      border-radius: 8px;
+      background-image: url(/content/themes/youdate/static/images/arrow-left.svg);
+      background-repeat: no-repeat;
+      background-position: top 4px left 5px;
+      background-size: 24px;
+      color:#362e48;
+      &:hover {
+        background:#eeeeee;
+        background-image: url(/content/themes/youdate/static/images/arrow-left.svg);
+        background-repeat: no-repeat;
+        background-position: top 4px left 5px;
+        background-size: 24px;
+      }
+    }
+  }
+  .conteaner-content-profile {
+    position: relative;
+    display: grid;
+    border-radius: 10px;
+    border:1px solid #f2f2f6;
+    grid-template-columns: 435px 1fr;
+    grid-auto-rows: auto;
+    gap: 0px;
+    color:#000;
+    padding:15px;
+    .conteaner-photo {
+      margin: 0;
+      .pad-a {
+        margin:6px 6px 0 0;
+      }
+      .border-style {
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .profile-photos-row {
+        margin-left:0px !important;
+      }
+      .photo-wrapper {
+        position: relative;
+        .profile-photo-label {
+          position: absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background: rgba(82, 80, 146, 0.45);
+          z-index: 1;
+          text-decoration: none;
+          color:#fff;
+          font-family: Roboto;
+          font-weight:500;
+          font-size: 14px;
+        }
+        &:hover {
+          filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95);
+          -moz-opacity: 0.95;
+          -khtml-opacity: 0.95;
+          opacity: 0.95;
+        }
+      }
+    }
+    .contenaer-info-user{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: min-content min-content;
+      gap: 15px 0;
+      .wrapper {
+        background:#f6f5ed;
+        border-radius: 8px;
+        padding:20px 25px;
+        box-sizing:border-box;
+        .name {
+          color:#000;
+          font-family: Roboto;
+          font-weight:500;
+          font-size: 14px;
+        }
+        .status-user {
+          display: inline-block;
+          width:11px;
+          height:11px;
+          border-radius: 11px;
+          border:1px solid #fff;
+          margin:5px 2px 0 0;
+          vertical-align: top;
+          &.green {
+            background:#3dbf2f;
+          }
+          &.gray {
+            background:#8f8f8f;
+          }
+        }
+        .status-ttl {
+          font-family: Roboto;
+          font-weight:400;
+          font-size: 13px;
+          display: inline-block;
+          vertical-align: top;
+          margin:1px 0 0 0;
+          &.green {
+            color:#3dbf2f;
+          }
+          &.gray {
+            color:#8f8f8f;
+          }
+        }
+        .conteaner-nav-user {
+          margin-top:10px;
+          width: 100%;
+          .btn-like {
+            display: inline-block;
+            vertical-align: top;
+            height:30px;
+            // width:30px;
+            padding: 0 18px 0 36px;
+            border-radius: 8px;
+            outline: none;
+            font-family: Roboto;
+            font-weight:400;
+            font-size: 13px;
+            border:0px;
+            &.btn-not-liked {
+              background: #ff2c55;
+              background-image: url(/content/themes/youdate/static/images/heart-like.svg);
+              background-repeat: no-repeat;
+              background-position: top 6px left 8px;
+              background-size: 19px;
+              color:#fff;
+              &::after {
+                content: 'Поставить лайк';
+              }
+            }
+            &.btn-liked {
+              background:none;
+              background-image: url(/content/themes/youdate/static/images/heart-like-active.svg);
+              background-repeat: no-repeat;
+              background-position: top 6px left 8px;
+              background-size: 19px;
+              color:#000;
+              &::after {
+                content: 'Убрать лайк';
+              }
+            }
+          }
+          .btn-direct {
+            display: inline-block;
+            vertical-align: top;
+            height:30px;
+            padding: 0 19px 0 35px;
+            border-radius: 8px;
+            border:0 !important;
+            outline: none;
+            font-family: Roboto;
+            font-weight:400;
+            font-size: 13px;
+            background: #4396e2;
+            color:#fff;
+            // background: rgba(254,86,85,1);
+            background-image: url(/content/themes/youdate/static/images/direct-white.svg);
+            background-repeat: no-repeat;
+            background-position: top 6px left 10px;
+            background-size: 17px;
+          }
+        }
+        .params-user {
+          position: relative;
+          width:100%;
+          margin:0 0 20px 0;
+          .items {
+            display: inline-block;
+            font-family: Roboto;
+            font-weight:400;
+            font-size: 13px;
+            color:#000;
+            margin:0 22px 5px 0;
+            &:nth-child(2) {
+              width:195px;
+            }
+            .item-title {
+              font-weight:600;
+              margin-right:3px;
+            }
+            .item {
+              color:#444;
+            }
+          }
+        }
+        .ttl-about {
+          font-family: Roboto;
+          font-weight:600;
+          font-size: 13px;
+          color:#000;
+          margin:0;
+          padding: 0;
+          height:min-content;
+        }
+        .about {
+          font-family: Roboto;
+          font-weight:400;
+          font-size: 13px;
+          color:#000;
+          margin:0;
+          padding: 0;
+          height:min-content;
+        }
+        .contenaer-uni {
+          width:100%;
+        }
+      }
+    }
+  }
+}

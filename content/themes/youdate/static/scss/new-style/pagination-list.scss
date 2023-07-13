@@ -1,0 +1,95 @@
+.wrapper-pagintaion {
+  width:100%;
+  margin:0;
+  padding: 7px 0 2px 20px;
+  box-sizing:border-box;
+  &.pd15 {
+    padding: 7px 0 2px 15px !important;
+  }
+}
+.pagination-list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  .pagination-item {
+    position: relative;
+    display: inline-block;
+    padding:0;
+    margin:0;
+    width:37px;
+    height:37px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    &.disabled {
+      &:nth-child(1) {
+        display: none;
+      }
+      &:last-child() {
+        display: none;
+      }
+    }
+    &:nth-child(1) {
+      width:78px;
+      border-radius: 0px;
+      cursor: pointer;
+      &:hover {
+        background:none !important;
+      }
+      .pagination-link {
+        font-size: 0px !important;
+        &::before {
+          position: absolute;
+          top:6px;
+          right:0;
+          width:78px;
+          content: 'В начало';
+          font-family: Roboto;
+          font-weight:500;
+          font-size: 18px;
+          color:#362e48;
+        }
+      }
+    }
+    &:last-child() {
+      width:90px;
+      border-radius: 0px;
+      cursor: pointer;
+      &:hover {
+        background:none !important;
+      }
+      .pagination-link {
+        font-size: 0 !important;
+        &::before {
+          position: absolute;
+          top:6px;
+          left:4px;
+          content: 'дальше';
+          font-family: Roboto;
+          font-weight:500;
+          font-size: 18px;
+          color:#362e48;
+        }
+      }
+    }
+    &:hover {
+      background-color: #ECEEF0;
+    }
+    &.active {
+      background: #ECEEF0;
+    }
+  }
+  .pagination-link {
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    padding-top:6px;
+    font-family: Roboto;
+    font-weight:500;
+    font-size: 18px;
+    color:#362e48;
+    text-align: center;
+  }
+}

@@ -1,0 +1,115 @@
+.conteaner-search-form-index {
+  position: relative;
+  display: inline-block;
+  width:542px;
+  margin:10px 0 0 20px;
+  height:auto;
+  .conteaner-label-search-form {
+    display: grid;
+    width:100%;
+    grid-template-columns:15px 105px 104px 1fr;
+    grid-auto-rows: 18px;
+    gap:0;
+    font-family: Roboto;
+    font-weight:400;
+    font-size: 11px;
+    color:#888;
+  }
+  .contenaer-grom-to-age {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    height:40px;
+    border-radius: 8px;
+    background: #ebebeb;
+    padding: 0 3px 0 4px;
+    // overflow: hidden;
+    .grom-to-age {
+      display: inline-block;
+      height:32px;
+      border-radius: 8px;
+      font-family: Roboto;
+      font-weight:400 !important;
+      font-size: 14px;
+      // border:1px solid #e9e9f8;
+      border:0;
+      background:#fff;
+      margin:4px 1px 0 0;
+      // -webkit-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      // -moz-box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      // box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+      width:100px;
+      box-sizing:border-box;
+      padding: 0 10px;
+      &:hover {
+        border:0px solid #000 !important;
+      }
+      &:focus {
+        border:0px solid #000 !important;
+        outline: 0px solid rgba(255,255,255,0.8); 
+        outline-offset: 0px;
+      }
+    }
+    .country {
+      display: inline-block;
+      height:32px;
+      border-radius: 8px;
+      border:0;
+      background:#fff;
+      margin:4px 1px 0 0;
+      width:180px;
+      box-sizing:border-box;
+      padding: 0 10px;
+      transition: none;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      font-family: Roboto;
+      font-weight:400 !important;
+      font-size: 14px;
+      &.arrow {
+        background-image: url(/content/themes/youdate/static/images/down-arrow2.svg);
+        background-repeat: no-repeat;
+        background-position: top 11px right 10px;
+        background-size: 11px;
+      }
+    }
+    .btn-s {
+      position: relative;
+      display: inline-block;
+      height:32px;
+      border-radius: 8px;
+      border:0;
+      background:#d4d4d4;
+      color:#333;
+      font-family: Roboto;
+      font-weight:400 !important;
+      font-size: 14px;
+      margin:4px 1px 0 0;
+      width:102px;
+      box-sizing:border-box;
+      padding: 0 5px 0 24px;
+      transition: none;
+      outline: none;
+      cursor: pointer;
+      .ico-s {
+        top:9px;
+        left:12px;
+        position: absolute;
+        margin-right:7px;
+      }
+      &.search-options {
+        float:right;
+        padding: 0 0 1px 0 !important;
+        width:32px !important;
+        background:#d4d4d4 !important;
+        color:#666 !important;
+        text-align: center;
+        img {
+          display: inline-block;
+          width:18px !important;
+        }
+      }
+    }
+  }
+}
